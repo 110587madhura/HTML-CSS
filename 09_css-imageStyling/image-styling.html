@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thumbnail image</title>
+    <style>
+        .container{
+            position: relative;
+      width: 300px;
+      height: 180px;
+      /* border: 2px solid #0c0c0c; */
+      border-radius: 8px;
+      /* overflow: hidden; */
+      justify-self: center;
+ display:grid ;
+
+        }
+        img {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            /* image Width/Height  */
+         width:400px;   
+         height: 400px;
+         object-fit: cover;
+         cursor: pointer;
+        }
+        .video-control{
+            width:400px;   
+         height: 400px; 
+         border: 2px solid black;
+        }
+        .image3-Thumbnail {
+            border-radius: 50%;  /* circle image*/
+            opacity: 0.5; /*opacity property is used to set the image transparent */
+        }
+
+    </style>
+</head>
+
+<body>
+   <div class="container">
+    <img src=
+    "./cold-weather.webp" 
+            alt="..." class="thumbnail-image"
+            >
+    <img src="./cold-coffee.webp" alt="..." class="thumbnail-image">
+    <div class="thumbnail-video">
+        <img src="./image3.webp" alt="..." class="image3-Thumbnail">
+    <div class="play-button"></div>
+    <video src="./coffee-mug.mp4" controls class="video-control"></video>
+    </div>
+    <div class="thumbnail">
+        <p style="text-align: center; margin: auto; font-weight:bold ;">Video-Thumbnail</p>
+        <a href="./coffee-mug.mp4" class="thumbnail" target="_blank">
+          <img src="./cold-coffee.webp" alt="rainyDay" class="imgThumb">
+          <div class="play-button"></div>
+        </a>
+      </div>
+   </div>
+</body>
+
+</html>

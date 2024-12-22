@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>Responsive Text Example</title>
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		.container {
+			width: 60%;
+			margin: auto;
+		}
+
+		h1 {
+			color: green;
+			font-size: 40px;
+		}
+
+		p {
+			font-size: 28px;
+		}
+
+		@media (max-width: 768px) {
+			h1 {
+				font-size: 30px;
+			}
+
+			p {
+				font-size: 20px;
+			}
+		}
+
+		@media (max-width: 576px) {
+			h1 {
+				font-size: 20px;
+			}
+
+			p {
+				font-size: 12px;
+                color: magenta;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>GeeksforGeeks</h1>
+
+		<p>
+			A Computer Science portal for geeks. It contains
+			well written, well thought and well explained
+			computer science and programming articles, ...
+		</p>
+	</div>
+</body>
+
+</html>

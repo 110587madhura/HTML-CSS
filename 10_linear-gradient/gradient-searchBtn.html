@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title>create gradient search button</title>
+</head>
+<head> 
+	<style> 
+    /* form element that is selected and styled with a display flex and center alignment for its child elements. */
+		form { 
+			display: flex; 
+			justify-content: center; 
+			align-items: center; 
+			margin: 20px; 
+		} 
+/* To style the input element */
+		input { 
+			padding: 10px; 
+			border-radius: 25px; 
+			/* border: none; */    /* here border is removed */
+			margin-right: 10px; 
+			font-size: 16px; 
+		} 
+/* The button element is styled with Custom Properties declared using --. */
+		button {
+    /* Declare CSS custom properties or CSS variables */
+			--primary-color: #a800ff; 
+			--secondary-color: #ffbf00; 
+			--shadow-color: rgba(255, 255, 255, 0.5); 
+			--transition-duration: 0.3s; 
+			--button-border-radius: 25px; 
+			--button-padding: 10px 20px; 
+			--button-font-size: 16px; 
+			--button-cursor: pointer; 
+            
+/*  use them to style the HTML components */
+			background-color: var(--primary-color); 
+			color: white; 
+			border: none; 
+			padding: var(--button-padding); 
+			border-radius: var(--button-border-radius); 
+			font-size: var(--button-font-size); 
+			cursor: var(--button-cursor); 
+			transition: 
+				background-color var(--transition-duration) ease-in-out; 
+			background-image: 
+				linear-gradient(to right, var(--primary-color), 
+										var(--secondary-color)); 
+			box-shadow: 0px 2px 10px var(--shadow-color); 
+		} 
+
+		button:hover { 
+			background-color: var(--secondary-color); 
+			background-image: 
+				linear-gradient(to right, var(--secondary-color), 
+										var(--primary-color)); 
+			transform: translateY(-2px); 
+			box-shadow: 0px 2px 10px var(--shadow-color); 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<h1 style="color: rgb(28, 138, 28); text-align: center;"> 
+	Gradient Search-button 
+	</h1> 
+	<form> 
+		<input type="text"
+			placeholder="Search..."> 
+		<button class="gradient-search-button"
+				type="submit"> 
+				Search 
+		</button> 
+	</form> 
+</body> 
+
+</html>

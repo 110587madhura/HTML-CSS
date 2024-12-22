@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>
+		 Create Custom Radio
+		Button using HTML and CSS?
+	</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    
+        h1 {
+            color: green;
+        }
+    
+        div {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
+            font-size: 3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .radio {
+            font-size: 30px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            color: black;
+        }
+    
+        input {
+            display: none;
+        }
+    
+        .circle {
+            position: relative;
+            height: 25px;
+            width: 25px;
+            border: 5px solid #3CE75B;
+            display: inline-block;
+            right: 125px;
+            border-radius: 50%;
+        }
+    
+        .circle:after {
+            content: '';
+            height: 10px;
+            width: 10px;
+            display: block;
+            position: absolute;
+            background: #3CE75B;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            opacity: 0;
+        }
+    
+        .radio input:checked~.circle:after {
+            opacity: 1;
+        }
+    </style>    
+</head>
+<body>
+	<h1>CSS - Radio Button </h1>
+	<h3>
+		Create Custom Radio Button
+		using HTML and CSS
+	</h3>
+	<div>
+		<label class="radio">
+			<input type="radio"> Button
+			<div class="circle"></div>
+		</label>
+	</div>
+</body>
+
+</html>

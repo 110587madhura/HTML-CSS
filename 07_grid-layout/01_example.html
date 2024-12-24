@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "menu content ads"
+        "footer footer footer";
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: auto;
+    }
+
+    .header { grid-area: header; background-color: lightblue; }
+    .menu { grid-area: menu; background-color: lightgreen; }
+    .content { grid-area: content; background-color: lightcoral; }
+    .ads { grid-area: ads; background-color: lightgoldenrodyellow; }
+    .footer { grid-area: footer; background-color: lightgray; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="menu">Menu</div>
+    <div class="content">Content</div>
+    <div class="ads">Ads</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>

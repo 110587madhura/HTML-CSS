@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>create the shadow effect while hovering on it</title>
+</head>
+<head>
+    <style>
+        body {
+            background-color: #abb0b3;
+            color: #0f5e1b;
+        }
+
+        #click {
+            border-radius: 50px;
+            display: inline-block;
+            font-size: 35px;
+            padding: 10px;
+            transition: box-shadow 1.2s;
+        }
+/* click button shadow */
+        #click {
+            box-shadow: 0 0 40px var(--box-shadow-color);
+            --box-shadow-color: palegoldenrod;
+        }
+
+        /* mouse hover green */
+        #click:hover {
+            --box-shadow-color: #57ab57;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hover me to see the effect</h1>
+    <h2 id="click">Shadow effect</h2>
+</body>
+
+</html>

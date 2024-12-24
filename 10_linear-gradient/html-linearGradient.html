@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title> 
+		How to create linear gradient 
+		text by using HTML ? 
+	</title> 
+</head> 
+
+<body> 
+	<svg > 
+		<defs> 
+			<linearGradient id="gradient"
+				x1="10%" y1="100%" x2="100%" y2="10%"> 
+				<stop offset="0%"
+					style="stop-color:red;" /> 
+				<stop offset="50%"
+					style="stop-color:orange;" /> 
+				<stop offset="100%"
+					style="stop-color:yellow;" /> 
+			</linearGradient> 
+		</defs> 
+		
+		<text x="10" y="80"
+			fill="url(#gradient)"
+			font-size="25" > 
+			HTML text -Linear gradient 
+		</text> 
+	</svg> 
+</body> 
+
+</html>

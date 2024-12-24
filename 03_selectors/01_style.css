@@ -1,0 +1,71 @@
+/* Universal selector */
+
+* {
+    background-color: beige;
+    margin : 5px;
+    padding: 1px;  
+    text-align: center;
+}
+
+/* Element type selector */
+h1 {
+    color: red;
+    font-size: 3rem;
+   
+}
+p {
+    color: white;
+    background-color: gray;
+}
+
+/* Id selector */
+#div-container {
+    color: blue;
+    background-color: pink;
+}
+
+/* Class selector */
+.paragraph-class {
+    font-size: 20px;
+    font-family: monospace;
+}
+
+/* Group selector */
+h1, .paragraph-class, #div-container {
+    font-family : arial;
+    background-color : grey;
+}
+/* Attribute selector */
+[style] {
+    background-color: lightgreen;
+    color: black;
+    font-family: monospace;
+    font-size: 4rem;
+}
+
+/* pseudo-class selector */
+h2:hover {
+    background-color : aqua;
+}
+
+/* pseudo-element selector */
+p::first-letter {
+    /* font-weight : bold; */
+    font-size : 2rem;
+  
+}
+
+/* element element selector */
+div p {
+    background-color: green;
+    color: white;
+    font-style: italic;
+}
+
+/*#id with child-element selector 
+#fontstyle p {
+    background-color: green;
+    color: white;
+    font-style: italic;
+} 
+    */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0">
+    <title>Styled Items</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            background-color: #f8acff;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            background-color: darkgray;
+            box-sizing: border-box;
+            width: 30%;
+            height: 30vh;
+        }
+
+        .item {
+            width: 90px;
+            height: 80px;
+            display: flex;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #333;
+            box-sizing: border-box;
+        }
+
+        .item:nth-child(1) {
+            background-color: #3498db;
+        }
+
+        .item:nth-child(2) {
+            background-color: #2ecc71;
+        }
+
+        .item:nth-child(3) {
+            background-color: #e74c3c;
+        }
+
+        .item:nth-child(4) {
+            background-color: #f39c12;
+        }
+
+        .item:nth-child(5) {
+            background-color: magenta;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>flex-basis</h3>
+    <div class="container">
+        <p class="item item1">Item1</p>
+        <p class="item item2">Item2</p>
+        <p class="item item3">Item3</p>
+        <p class="item item4">Item4</p>
+    </div>
+</body>
+
+</html>
